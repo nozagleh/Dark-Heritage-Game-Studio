@@ -1,0 +1,370 @@
+/*----GENERAL HTML RULES START----*/
+
+/*removes browsers default margin and padding*/
+*{
+	margin:0;
+	padding:0;
+}
+
+/*Sets the typeface, font size and color of the font*/
+html{
+	font-family: Courier, Verdana, sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	min-height: 100%;
+}
+
+/*Sets the default background color, sets the bg image and positions it, sets the width to full width*/
+body{
+	background: #040404;
+	background-image: url('../images/bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	width:100%;
+	min-height: 100%;
+}
+
+/*Centers iframe elemets on the page*/
+iframe{
+	display: block;
+	margin: auto;
+	padding-top:30px;
+	border: none;
+}
+
+/*Specify the default font-size for text elements*/
+h1{font-size: 2em;}
+h2{font-size: 1.3em;}
+p{font-size: 1em;}
+
+/*----GENERAL HTML RULES END----*/
+
+
+/*----WRAPPER START-----*/
+
+/*Wrapping div to center site and set the width*/
+#wrapper{
+	margin: 40px auto;
+	height: 100%;
+	width: 960px;
+	overflow: hidden;
+	min-height: 100px;
+	height: auto !important;
+	/*margin-bottom: -80px;*/
+}
+
+/*----WRAPPER END-----*/
+
+
+/*----HEADER START----*/
+
+/*Header div for the logo and navigation bar starts, sets the background of the header and height*/
+#header{
+	background-image: url('../images/headerBorder.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	height:128px;
+}
+
+/*Logo div, sets the height, width and positions the logo and floats the logo to left*/
+#logo{
+	width: 45%;
+	height: 100%;
+	padding-top:20px;
+	float:left;
+}
+
+/*Navigation bar div, sets the width and floats it to right */
+#nav{
+	width: 45%;
+	float:right;
+}
+
+/*sets the margin-top of the navigation bar*/
+#nav ul{ margin-top:48px;}
+
+/*hides the submenu*/
+#nav ul ul{display: none; padding: 0; position: absolute;}
+
+/*sets a padding on the first menu item, adds the arrow image to the menu*/
+#nav ul li:first-child{ padding-left: 25px; background: url('../images/navUp.png') no-repeat left center; background-size: 16px 16px;}
+
+/*Changes the background image on hover*/
+#nav ul li:first-child:hover{ background: url('../images/navDown.png') no-repeat left center; background-size: 16px 16px;}
+
+/*sets the position of each item in the main menu*/
+#nav ul li{
+	display: inline-block;
+	padding-right: 20px;
+	font-size: 1.2em;
+	position: relative;
+}
+
+/*removes the text decoration and sets the color of the links*/
+#nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	transition: 0.5s ease;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+}
+
+/*Sets a border on the items when hovered over*/
+#nav ul li a:hover{border-bottom: 3px solid #ffffff;}
+/*displays the submenu when main menu is hovered*/
+#nav ul li:hover > ul{ 
+	display:block; 
+	padding-top: 5px;
+	margin: 0px; 
+	top: 25px;
+}
+
+/*Removes background when submenu is hovered*/
+#nav ul li:first-child > ul li:hover{background: none;}
+
+/*displays the items of the submenu when main is hovered*/
+#nav ul li:hover > ul li{
+	padding: 0px; 
+	margin: 0px; 
+	font-size: 1em; 
+	display: inline-block;
+	background: none;
+}
+/*----HEADER END----*/
+
+
+/*----MAIN START----*/
+
+/*clears the float of main, sets the width and height*/
+.main{
+	clear:both;
+	width: 100%;
+	height: auto;
+	margin-bottom: 100px;
+}
+
+/*Aligns the text of h1 elements*/
+.main h1{text-align: center;}
+
+/*Aligns the text of h2 elements*/
+.main h2{text-align: center;}
+
+/*Aligns the text and sets the padding around it*/
+.main p{
+	padding:40px 200px 0px 200px;
+	text-align: center;
+}
+
+/*Sets the height of the concept art main div*/
+#conceptPage{height: 850px;}
+
+/*Remove the decoration and sets the text colour to white on links*/
+.main a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/*Links turn red when hovered*/
+.main a:hover{color:red;}
+
+/*Set width of ul to 200px and margin to auto*/
+.main ul{
+	width: 200px;
+	margin:auto;
+}
+
+/*Displays the list inline*/
+.main ul li{display: inline;}
+
+/*Centers the image table and adds a padding to the top*/
+.main table{
+	margin: auto;
+	padding-top:50px;
+}
+
+/*Adds a padding all around each item in the table, clears above float and sets the elements as a block*/
+.main table tr td{
+	padding: 10px;
+	clear: both;
+	display: inline-block;
+}
+
+/*Sets the size of the images in the table and adds a border*/
+.main table tr td img{
+	height: 200px;
+	width: 220px;
+	border:2px solid;
+	border-radius:25px;
+}
+
+/*Removes the decoration and sets the color of the links in the table*/
+.main table tr td a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/*----MAIN END----*/
+
+
+/*----GAME DIV START---*/
+/*div for each game, sets the sizes of fonts
+	configures the cover art and list of images*/
+
+/*Aligns the main heading of the game to the left, sets a left padding and font size*/
+#game h1{
+	text-align: left;
+	padding-left: 210px;
+	font-size: 2em;
+}
+
+/*Sets the size of heading 2*/
+#game h2{font-size: 1.3em;}
+
+/*Centers heading 3, adds a top padding*/
+#game h3{
+	text-align: center;
+	padding-top: 50px;	
+}
+
+/*Sets the width, padding and position of games ul*/
+#game ul{
+	width: 460px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+/*Sets the li's inline*/
+#game ul li{display: inline-block;}
+
+/*Sets the size of the images in the list*/
+#game ul li img{
+	height: 193px;
+	width: 145px;
+}
+
+/*Sets the cover art to the left of the text on the website, scales it and positions*/
+#coverArt{
+	float:left;
+	padding-left:200px;
+	padding-top:50px;
+	height: 233px;
+	width: 184px;
+	display: block;
+}
+
+/*Pushes the game description to the left*/
+#gameDescription{margin-left: 200px;}
+
+/*----GAME DIV ENDS----*/
+
+
+/*----CONTACT FORM DIV START----*/
+
+/*Posistions the div, sets the background and size of the div*/
+.contactForm{
+	width: 350px;
+	background-color: rgba(38,38,38,0.5);
+	border: 2px solid #ffffff;
+	border-radius: 15px;
+	margin: 100px auto;
+	padding: 20px 70px 20px 0px;
+}
+
+/*Positions the labels on the form*/
+.contactForm label {
+    width: 50px;
+    display: inline-block;
+    margin: 2px 6px 6px 0px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/*Makes the text area non resizable*/
+.contactForm textarea{resize: none;}
+
+/*Positions the submit button, sets the background and style*/
+.button{
+	background-color: #0cc1f8;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 1.0em;
+	width: 100%;
+	height: 40px;
+	margin-top: 5px;
+	margin-left:40px;
+}
+
+/*Changes background of button when hovered*/
+.button:hover{background-color: #077b9e;}
+
+/*----CONTACT FORM DIV END----*/
+
+
+/*----FOOTER START----*/
+
+/*Positions the footer and sets the background and aligns the text*/
+.footer{
+	bottom:0;
+	left:0;
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	background: url('../images/footerBorder.png') no-repeat center top;
+	background-color: #040404;
+}
+
+/*Sets a margin to the ul's*/
+.footer ul{margin-top:30px;}
+
+/*Removes styles from li's, sets a right border and sets a padding*/
+.footer ul li{
+	list-style-type: none;
+	display: inline-block;
+	border-right: 2px solid #ffffff;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+/*Removes the border and padding of the firs li in the ul*/
+.footer ul li:first-child{
+	border:none;
+	padding-right: 0px;	
+}
+
+/*Removes the border after the last image in the footer*/
+.footer ul li:nth-child(2){border: none;}
+
+/*Removes the border of the last li in the ul*/
+.footer ul li:last-child{border: none;}
+
+/*Removes decoration from links and sets the text colour*/
+.footer a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Changes colour of the links when hovered*/
+.footer a:hover{color: red;}
+
+/*Sets the size of images in the footer*/
+.footer img{
+	height: 32px;
+	width: 32px;
+}
+
+/*----FOOTER END----*/
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+/*Background class styling for the jQuery background randomizer*/
+
+.background1{
+	background-image: url('../images/bg.jpg');
+}
+
+.background2{
+	background-image: url('../images/bg1.jpg');
+}
+
+.background3{
+	background-image: url('../images/bg2.png');
+}
+
+.background4{
+	background-image: url('../images/bg3.jpg');
+}
+
+.background5{
+	background-image: url('../images/bg4.jpg');
+}
+
+.noBackground{
+	background-image: none;
+}
